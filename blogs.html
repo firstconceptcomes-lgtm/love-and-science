@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Love & Science</title>
+  <meta name="description"
+        content="Explore insightful articles on love psychology, attachment styles, relationship dynamics, manipulation awareness, and building strong bonds. Fresh perspectives backed by science." />
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Quick inline style additions/enhancements — move to style.css later */
+    :root {
+      --accent: #6d597a;          /* soft purple-pink for love theme */
+      --accent-light: #b56576;
+      --text: #333;
+      --light-bg: #fdfafb;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--light-bg);
+      line-height: 1.7;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2.5rem;
+      padding-bottom: 0.8rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent), var(--accent-light));
+      border-radius: 2px;
+    }
+
+    .blog-posts-section {
+      padding: 5rem 5%;
+      background: linear-gradient(to bottom, #fff, #f8f5f9);
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .post-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: all 0.35s ease;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .post-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 50px rgba(109,89,122,0.18);
+    }
+
+    .post-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 1.8rem 2rem;
+    }
+
+    .post-meta {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+      margin: 0 0 1rem;
+      color: var(--accent);
+    }
+
+    .post-excerpt {
+      font-size: 1.05rem;
+      color: #555;
+      margin: 0 0 1.2rem;
+    }
+
+    .read-more {
+      font-size: 0.95rem;
+      color: var(--accent-light);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #f9f5ff, #fff0f5);
+      padding: 6rem 5%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.8rem; }
+      .blog-posts-section { padding: 4rem 5%; }
+      .post-image { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ================= HERO ================= -->
+  <header class="hero"
+    style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+           url('https://images.unsplash.com/photo-1499754162580-4a901755be69?auto=format&fit=crop&q=80&w=2000')
+           center/cover no-repeat;">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="psychology.html">Love Psychology</a>
+      <a href="attachment.html">Attachment Styles</a>
+      <a href="manipulation.html">Manipulation & Safety</a>
+      <a href="strong-relationships.html">Strong Relationships</a>
+      <a href="stories.html">Stories</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Blog</h1>
+      <p class="tagline">
+        Thought-provoking articles blending love, psychology, and science —
+        offering practical insights for healthier relationships and personal growth.
+      </p>
+      <a href="#blog-overview" class="cta-button">
+        Read the Latest
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <!-- INTRO -->
+    <section class="intro" id="blog-overview">
+      <h2 class="section-title">Insights from Love & Science</h2>
+      <p class="section-description">
+        Our blog features expert analyses, research breakdowns, and actionable advice on the intricacies of human connections.
+        From decoding emotional patterns to navigating modern dating, each post is designed to empower you with knowledge.
+      </p>
+    </section>
+
+    <!-- CATEGORIES (Optional Teaser) -->
+    <section>
+      <h2 class="section-title">Explore by Category</h2>
+      <div class="features">
+        <!-- PSYCHOLOGY -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1527176930608-09cb256ab504?auto=format&fit=crop&q=80"
+               alt="Psychology category">
+          <h3>Love Psychology</h3>
+          <p>Delve into the mind's role in attraction, bonding, and heartbreak.</p>
+        </div>
+        <!-- ATTACHMENT -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80"
+               alt="Attachment category">
+          <h3>Attachment Styles</h3>
+          <p>How early experiences shape your approach to intimacy and trust.</p>
+        </div>
+        <!-- MANIPULATION -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504197832219-03c7ce27d82f?auto=format&fit=crop&q=80"
+               alt="Manipulation category">
+          <h3>Manipulation & Safety</h3>
+          <p>Spotting red flags and protecting your emotional well-being.</p>
+        </div>
+        <!-- RELATIONSHIPS -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&q=80"
+               alt="Relationships category">
+          <h3>Strong Relationships</h3>
+          <p>Strategies for building resilient, fulfilling partnerships.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS SECTION (Like Chapters) -->
+    <section class="blog-posts-section">
+      <h2 class="section-title">Latest Blog Posts</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 3rem; color:#555; font-size:1.15rem;">
+        Discover our newest articles, each linking to in-depth explorations. New posts added regularly for fresh insights.
+      </p>
+
+      <div class="posts-grid">
+        <a href="blog-post-1.html" class="post-card">
+          <img class="post-image" src="https://images.unsplash.com/photo-1527176930608-09cb256ab504?auto=format&fit=crop&q=80&w=800" alt="Blog post 1 image">
+          <div class="post-content">
+            <div class="post-meta">
+              <span>January 15, 2026</span>
+              <span>By Dr. Elena Rossi</span>
+            </div>
+            <h3 class="post-title">The Neuroscience of Falling in Love</h3>
+            <p class="post-excerpt">Explore how brain chemicals like dopamine and oxytocin create the euphoria of new romance — and what happens when it fades.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="blog-post-2.html" class="post-card">
+          <img class="post-image" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=800" alt="Blog post 2 image">
+          <div class="post-content">
+            <div class="post-meta">
+              <span>January 10, 2026</span>
+              <span>By Alex Thompson</span>
+            </div>
+            <h3 class="post-title">Healing Anxious Attachment: Practical Steps</h3>
+            <p class="post-excerpt">Science-backed techniques to reduce abandonment fears and cultivate secure bonds in your relationships.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="blog-post-3.html" class="post-card">
+          <img class="post-image" src="https://images.unsplash.com/photo-1504197832219-03c7ce27d82f?auto=format&fit=crop&q=80&w=800" alt="Blog post 3 image">
+          <div class="post-content">
+            <div class="post-meta">
+              <span>December 28, 2025</span>
+              <span>By Dr. Elena Rossi</span>
+            </div>
+            <h3 class="post-title">Red Flags: Early Signs of Manipulation</h3>
+            <p class="post-excerpt">Learn to identify subtle tactics like love bombing and gaslighting before they escalate.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="blog-post-4.html" class="post-card">
+          <img class="post-image" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&q=80&w=800" alt="Blog post 4 image">
+          <div class="post-content">
+            <div class="post-meta">
+              <span>December 20, 2025</span>
+              <span>By Alex Thompson</span>
+            </div>
+            <h3 class="post-title">5 Habits for Resilient Relationships</h3>
+            <p class="post-excerpt">Drawing from Gottman's research, daily practices that strengthen communication and emotional intimacy.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="blog-post-5.html" class="post-card">
+          <img class="post-image" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=800" alt="Blog post 5 image">
+          <div class="post-content">
+            <div class="post-meta">
+              <span>December 15, 2025</span>
+              <span>By Guest Contributor</span>
+            </div>
+            <h3 class="post-title">The Role of Empathy in Conflict Resolution</h3>
+            <p class="post-excerpt">How understanding your partner's perspective can transform arguments into opportunities for closeness.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="blog-post-6.html" class="post-card">
+          <img class="post-image" src="https://images.unsplash.com/photo-1499754162580-4a901755be69?auto=format&fit=crop&q=80&w=800" alt="Blog post 6 image">
+          <div class="post-content">
+            <div class="post-meta">
+              <span>December 10, 2025</span>
+              <span>By Dr. Elena Rossi</span>
+            </div>
+            <h3 class="post-title">Modern Dating: Psychological Challenges</h3>
+            <p class="post-excerpt">Navigating apps, ghosting, and choice overload — insights from behavioral science.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2 class="section-title">Stay Updated</h2>
+      <p class="cta-text">
+        Subscribe to our newsletter for the latest blog posts, exclusive content, and relationship tips delivered to your inbox.
+      </p>
+      <a href="subscribe.html" class="cta-button large">
+        Subscribe Now →
+      </a>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Love & Science</p>
+    <p>Helping you love smarter, not harder.</p>
+  </footer>
+</body>
+</html>
