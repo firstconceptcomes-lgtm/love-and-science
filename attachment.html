@@ -3,23 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Attachment Styles | Love & Science</title>
-
   <meta name="description"
         content="Understand the four attachment styles — secure, anxious, avoidant, and fearful-avoidant — and how they shape relationships, emotions, and intimacy." />
-
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Quick inline style additions/enhancements — move to style.css later */
+    :root {
+      --accent: #6d597a;          /* soft purple-pink for love theme */
+      --accent-light: #b56576;
+      --text: #333;
+      --light-bg: #fdfafb;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--light-bg);
+      line-height: 1.7;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2.5rem;
+      padding-bottom: 0.8rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(to right, var(--accent), var(--accent-light));
+      border-radius: 2px;
+    }
+
+    .chapters-section {
+      padding: 5rem 5%;
+      background: linear-gradient(to bottom, #fff, #f8f5f9);
+    }
+
+    .chapters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .chapter-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: all 0.35s ease;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .chapter-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 50px rgba(109,89,122,0.18);
+    }
+
+    .chapter-number {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 4.5rem;
+      font-weight: 900;
+      color: rgba(109,89,122,0.08);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .chapter-content {
+      padding: 2.2rem 2rem;
+    }
+
+    .chapter-title {
+      font-size: 1.5rem;
+      margin: 0 0 1rem;
+      color: var(--accent);
+    }
+
+    .chapter-excerpt {
+      font-size: 1.05rem;
+      color: #555;
+      margin: 0;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #f9f5ff, #fff0f5);
+      padding: 6rem 5%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.8rem; }
+      .chapters-section { padding: 4rem 5%; }
+    }
+  </style>
 </head>
-
 <body>
-
   <!-- ================= HERO ================= -->
   <header class="hero"
     style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
            url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2000')
            center/cover no-repeat;">
-
     <nav>
       <a href="index.html">Home</a>
       <a href="psychology.html">Love Psychology</a>
@@ -29,14 +126,12 @@
       <a href="stories.html">Stories</a>
       <a href="about.html">About</a>
     </nav>
-
     <div class="hero-content">
       <h1>Attachment Styles</h1>
       <p class="tagline">
         How early emotional experiences shape closeness, trust,
         and the way you love — and how these patterns can change.
       </p>
-
       <a href="#attachment-overview" class="cta-button">
         Understand the Patterns
       </a>
@@ -45,7 +140,6 @@
 
   <!-- ================= MAIN ================= -->
   <main>
-
     <!-- INTRO -->
     <section class="intro" id="attachment-overview">
       <h2 class="section-title">Why Attachment Styles Matter</h2>
@@ -61,58 +155,69 @@
     <!-- ATTACHMENT TYPES -->
     <section>
       <h2 class="section-title">The Four Attachment Styles</h2>
-
       <div class="features">
+        <!-- SECURE --><div class="card">...</div>
+        <!-- ANXIOUS --><div class="card">...</div>
+        <!-- AVOIDANT --><div class="card">...</div>
+        <!-- FEARFUL --><div class="card">...</div>
+      </div>
+    </section>
 
-        <!-- SECURE -->
-        <div class="card">
-          <img src="https://www.verywellmind.com/thmb/egpHNsKsFZbpBts0LJ5O7BhdjxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/attachment-styles-2795344-v1-5c61db3346e0fb0001ca8cb1.png"
-               alt="Secure attachment illustration">
-          <h3>Secure Attachment</h3>
-          <p>
-            Securely attached individuals feel comfortable with both intimacy
-            and independence. They trust others, communicate openly,
-            and handle conflict without fear of abandonment or loss of self.
-          </p>
-        </div>
+    <!-- NEW CHAPTERS SECTION -->
+    <section class="chapters-section">
+      <h2 class="section-title">Explore the Chapters</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 3rem; color:#555; font-size:1.15rem;">
+        Dive deeper into how attachment styles show up in dating, conflict, healing, and building lasting love.
+      </p>
 
-        <!-- ANXIOUS -->
-        <div class="card">
-          <img src="https://www.verywellhealth.com/thmb/WY-0nvXKsFZbpBts0LJ5O7BhdjxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/anxious-attachment-5204408_final-8097b866bc014bdba30e2ff9175b39cf.jpg"
-               alt="Anxious attachment illustration">
-          <h3>Anxious Attachment</h3>
-          <p>
-            Anxious attachment is marked by a strong desire for closeness
-            combined with fear of abandonment. This often leads to
-            reassurance-seeking, emotional hypervigilance, and anxiety
-            around relationships.
-          </p>
-        </div>
+      <div class="chapters-grid">
+        <a href="chapter-secure.html" class="chapter-card">
+          <div class="chapter-number">01</div>
+          <div class="chapter-content">
+            <h3 class="chapter-title">The Secure Foundation</h3>
+            <p class="chapter-excerpt">What secure attachment looks like in adult relationships — and why it's the gold standard for emotional safety and mutual growth.</p>
+          </div>
+        </a>
 
-        <!-- AVOIDANT -->
-        <div class="card">
-          <img src="https://images.squarespace-cdn.com/content/v1/64064ec3d221ea1fb1938599/00175adc-ccbe-4ec5-8852-3e4021ec6e94/Avoidant+Attachment+Style+%281%29.png"
-               alt="Avoidant attachment illustration">
-          <h3>Avoidant Attachment</h3>
-          <p>
-            Avoidant attachment prioritizes independence and emotional control.
-            Individuals may suppress feelings, avoid vulnerability,
-            and feel uncomfortable when relationships become too close.
-          </p>
-        </div>
+        <a href="chapter-anxious.html" class="chapter-card">
+          <div class="chapter-number">02</div>
+          <div class="chapter-content">
+            <h3 class="chapter-title">Anxious Hearts</h3>
+            <p class="chapter-excerpt">Understanding the inner world of anxious attachment: fear of abandonment, reassurance needs, and paths toward calmer connection.</p>
+          </div>
+        </a>
 
-        <!-- FEARFUL -->
-        <div class="card">
-          <img src="https://cdn.brainmanager.io/to083yd6g2inn01fvoie766mf8rt"
-               alt="Fearful-avoidant attachment illustration">
-          <h3>Fearful-Avoidant (Disorganized)</h3>
-          <p>
-            This style combines a desire for connection with fear of getting hurt.
-            It often results in push–pull dynamics, emotional confusion,
-            and unstable relationship patterns rooted in past trauma.
-          </p>
-        </div>
+        <a href="chapter-avoidant.html" class="chapter-card">
+          <div class="chapter-number">03</div>
+          <div class="chapter-content">
+            <h3 class="chapter-title">The Avoidant Armor</h3>
+            <p class="chapter-excerpt">Why independence can become emotional distance — exploring dismissive-avoidant patterns and how closeness can feel threatening.</p>
+          </div>
+        </a>
 
+        <a href="chapter-fearful.html" class="chapter-card">
+          <div class="chapter-number">04</div>
+          <div class="chapter-content">
+            <h3 class="chapter-title">Caught in the Push-Pull</h3>
+            <p class="chapter-excerpt">Fearful-avoidant (disorganized) attachment: craving love while fearing hurt — trauma roots and stabilization strategies.</p>
+          </div>
+        </a>
+
+        <a href="chapter-dating.html" class="chapter-card">
+          <div class="chapter-number">05</div>
+          <div class="chapter-content">
+            <h3 class="chapter-title">Attachment in Dating & Early Romance</h3>
+            <p class="chapter-excerpt">How your style influences partner choice, texting anxiety, first conflicts, and the honeymoon-to-reality transition.</p>
+          </div>
+        </a>
+
+        <a href="chapter-healing.html" class="chapter-card">
+          <div class="chapter-number">06</div>
+          <div class="chapter-content">
+            <h3 class="chapter-title">Healing Toward Secure</h3>
+            <p class="chapter-excerpt">Practical steps, therapy approaches, self-soothing tools, and relationship experiences that help rewire attachment over time.</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -124,12 +229,10 @@
         healthy relationships, and emotional work, people can gradually
         move toward more secure patterns of connection.
       </p>
-
       <a href="strong-relationships.html" class="cta-button large">
         Learn How Secure Love Is Built →
       </a>
     </section>
-
   </main>
 
   <!-- ================= FOOTER ================= -->
@@ -137,6 +240,5 @@
     <p>© 2026 Love & Science</p>
     <p>Helping you love smarter, not harder.</p>
   </footer>
-
 </body>
 </html>
